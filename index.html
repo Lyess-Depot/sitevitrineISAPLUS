@@ -33,19 +33,32 @@
 <body class="bg-paper text-carbon font-sans antialiased selection:bg-primary selection:text-white">
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-primary text-white rounded flex items-center justify-center font-heading font-extrabold text-sm shadow-sm">
-                        ISA
-                    </div>
-                    <div class="flex flex-col">
-                        <div class="flex items-center gap-2">
-                            <span class="font-heading text-2xl font-extrabold tracking-tight text-carbon">ISA<span class="text-primary">plus</span></span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-medium bg-primary/10 text-primary border border-primary/20">Notre nouvelle identité</span>
-                        </div>
-                        <span class="text-[9px] font-mono tracking-wider text-steel uppercase">Distribution de courrier & prospectus sans adresse</span>
-                    </div>
-                </div>
+            <div class="flex items-center gap-4">
+                <!-- Nouveau Logo Vectoriel Fidèle (Gazelle géométrique + ISA plus + flèche + signature) -->
+                <a href="#" class="flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 85" class="h-14 w-auto">
+                        <!-- Gazelle géométrique bondissante -->
+                        <g transform="translate(0, 0) scale(0.6)">
+                            <path d="M45,40 L65,25 L85,35 L95,50 L75,65 L55,55 Z" fill="#14636C"/>
+                            <path d="M30,55 L45,40 L55,55 L40,75 L25,65 Z" fill="#1E8A95"/>
+                            <path d="M65,25 L90,15 L105,28 L95,50 L85,35 Z" fill="#0ea5e9"/>
+                            <path d="M90,15 L100,5 L108,12 L105,28 Z" fill="#14636C"/>
+                            <path d="M98,8 C96,-5 102,-12 108,-15 C104,-8 106,0 108,5 Z" fill="#0F172A"/>
+                            <path d="M94,10 C90,-2 95,-8 100,-12 C97,-5 98,2 100,8 Z" fill="#14636C"/>
+                            <path d="M40,75 L35,95 L20,90 L25,65 Z" fill="#0F172A"/>
+                            <path d="M75,55 L85,80 L75,85 L65,65 Z" fill="#14636C"/>
+                            <path d="M85,50 L95,75 L85,80 L75,55 Z" fill="#1E8A95"/>
+                            <path d="M25,50 L15,58 L20,65 L30,55 Z" fill="#14636C"/>
+                        </g>
+                        <!-- Texte ISA plus -->
+                        <text x="70" y="38" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="32" fill="#0F172A" letter-spacing="-1px">ISA<tspan fill="#1E8A95" font-weight="700">plus</tspan></text>
+                        <!-- Flèche ascendante -->
+                        <path d="M 70 64 Q 115 64, 155 38 L 146 38 M 155 38 L 155 48" fill="none" stroke="#1E8A95" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Sous-titre officiel -->
+                        <text x="70" y="77" font-family="JetBrains Mono, monospace" font-size="7" font-weight="600" fill="#475569" letter-spacing="0.3px">DISTRIBUTION DE COURRIER &amp; PROSPECTUS SANS ADRESSE</text>
+                    </svg>
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-medium bg-primary/10 text-primary border border-primary/20">Notre nouvelle identité</span>
+                </a>
             </div>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-steel">
                 <a href="#expertises" class="hover:text-primary transition-colors">Expertises</a>
@@ -226,10 +239,13 @@
                             </div>
                         </div>
 
+                        <!-- Encart Histoire & Évolution avec l'ancien logo -->
                         <div class="bg-slate-900 text-white p-6 rounded border border-slate-800 space-y-3">
-                            <div class="font-heading font-bold text-sm">Histoire & Évolution ISAPLUS</div>
+                            <div class="font-heading font-bold text-sm flex items-center gap-2">
+                                <span>Histoire & Évolution ISAPLUS</span>
+                            </div>
                             <p class="text-xs text-slate-300 leading-relaxed">
-                                Vous nous avez connu sous notre ancien logo historique ? ISAPLUS évolue pour mieux vous accompagner, mais notre engagement de terrain reste strictement le même.
+                                Vous nous avez connu sous notre ancien visage ? ISAPLUS évolue pour mieux vous accompagner, mais notre engagement de terrain reste strictement le même.
                             </p>
                         </div>
                     </div>
